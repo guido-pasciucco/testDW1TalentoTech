@@ -1,0 +1,87 @@
+h1{
+    text-align: center;
+    background-color: aquamarine;
+    border: 2px solid brown;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+/* Pseudoclase - hover - mouse está apoyado sobre el elemento */
+
+.card:hover{ 
+    background-color: aqua;
+    transform: rotate(45deg);
+}
+
+/* 
+3 transformaciones
+una única propiedad - transform 
+
+ESCALAR - CAMBIAR DE TAMAÑO
+    transform: scale(0.5);
+    de 0 a 1 - achica
+    de 1 en adelante - agranda
+
+    2 = el doble
+    0.5 = 50% menos
+    1.5 = 50% mas
+
+TRASLADAR - MOVER DE LUGAR 
+    transform: translate(50px, 100px) eje horizontal y vertical
+    transform: translateX(100px) solo eje horizontal
+    transform: translateY(100px) solo eje vertical
+    puedo usar valores positivos o negativos
+
+ROTATE - ROTARLO, HACERLO GIRAR
+
+
+Transition
+
+
+*/
+
+
+/* 
+2 librerías muy sencillas SOLO para animaciones.
+
+animateCSS
+
+AOS
+
+*/
+
+/* PROS Y CONTRAS FORMAS DE INTEGRAR BOOTSTRAP
+
+DESCARGAR LOS ARCHIVO DIRECTAMENTE
+
+    PROS
+        - NO SE ME VA A ROMPER NUNCA EL ESTILO
+        - SI SE CAE DE INTERNET BOOTSTRAP, YO MANTENGO MI ESTILO
+        - SI UN DIA BOOTSTRAP CIERRA PARA SIEMPRE, YO MANTENGO MI ESTILO
+    CONTRA
+        - NO SE ACTUALIZA
+        - FUERA DE INTERNET
+        - MI PROYECTO VA A PESAR MUCHO MÁS
+
+CDN - ETIQUETA LINK EN EL HEAD DE MI HTML
+
+    PROS
+        - SUPER FACIL DE INTEGRAR
+        - ESTÁ CONECTADO A INTERNET, A LAS ACTUALIZACIONES
+    CONTRA
+        - SE CAE BOOTSTRAP, SE NOS ROMPE TODO EL ESTILO
+        - BOOSTRAP DESAPARECE PARA SIEMPRE, NOSOTROS PERDEMOS PARA SIEMPRE NUESTRO ESTILO
+
+
+*/
